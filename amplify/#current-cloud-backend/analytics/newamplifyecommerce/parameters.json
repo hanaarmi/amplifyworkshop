@@ -1,0 +1,21 @@
+{
+    "appName": "newamplifyecommerce",
+    "roleName": "pinpointLambdaRoled56a45fb",
+    "cloudformationPolicyName": "cloudformationPolicyd56a45fb",
+    "cloudWatchPolicyName": "cloudWatchPolicyd56a45fb",
+    "pinpointPolicyName": "pinpointPolicyd56a45fb",
+    "authPolicyName": "pinpoint_amplify_d56a45fb",
+    "unauthPolicyName": "pinpoint_amplify_d56a45fb",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
